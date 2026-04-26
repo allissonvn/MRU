@@ -2,20 +2,19 @@ package br.edu.ifba.ruido.impl;
 
 public class Leitura {
 
-    Integer decibeis;
+     private int decibeis;
 
-    public Leitura(Integer decibeis) {
+    public Leitura(int decibeis) {
         this.decibeis = decibeis;
     }
 
-    public Integer getDecibeis() {
+    public int getDecibeis() {
         return decibeis;
     }
 
-    public void setDecibeis(Integer decibeis) {this.decibeis = decibeis;}
 
     @Override
     public String toString() {
-        return "decibeis = " + decibeis;
+        return "Leitura = " + decibeis + " dB";
     }
 }
