@@ -7,9 +7,7 @@ public class SensorRuido {
     private String id;
     private ArrayList<Leitura> leituras;
 
-    public SensorRuido(String id) {}
-
-    public SensorRuido(String id, Leitura leitura) {
+    public SensorRuido(String id) {
         this.id = id;
         this.leituras = new ArrayList<>();
     }

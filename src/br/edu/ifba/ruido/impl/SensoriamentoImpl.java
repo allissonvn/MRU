@@ -14,7 +14,12 @@ public class SensoriamentoImpl implements Sensoriamento {
     private static final int VALOR_MAXIMO_DB = 120;
 
 
-
+    /**
+     * Complexidade: O(N²)
+     * Motivo: loop externo cria N sensores e loop interno
+     * gera entre 5 e 10 leituras para cada sensor.
+     * Impacto: cresce quadraticamente com a entrada.
+     */
     @Override
     public ArrayList<SensorRuido> gerar(int totalSensores) {
        ArrayList<SensorRuido> sensores = new ArrayList<>();
